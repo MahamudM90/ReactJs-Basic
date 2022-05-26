@@ -10,6 +10,7 @@ function App() {
       .then(res => res.json())
       .then(data => {setProducts(data);
       console.log(data);
+       data.map(product => product.name)
       
        } )
       .catch(error => console.log(error))
